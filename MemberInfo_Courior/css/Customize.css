@@ -298,3 +298,19 @@ input[type=file]::file-selector-button:active {
     transform: translateY(1px) !important;
 }
 
+/* 預覽圖 */
+
+.Preview{ 
+    padding-left: 150px;
+}
+
+.PreviewBox{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 26px;
+    color:#ccc;
+    border: #ccc 5px dotted;
+    width: 250px;
+    height: 250px;
+}
