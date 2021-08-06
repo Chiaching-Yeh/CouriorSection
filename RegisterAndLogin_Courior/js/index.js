@@ -33,12 +33,6 @@ $(window).on("load", function () {
     $(".ReForm input").clear();
   })
 
-  // $(".submitBtn).on("click", function () {
-  //   // 若有空值就跳出警告
-
-
-  //   // 密碼與請再次輸入密碼值須相符
-  // })
 
 
 });
