@@ -62,8 +62,17 @@ jQuery(document).ready(function ($) {
         }
     })
 
-    $(".slider round").click(function (e){
-        console.log(e);
-    })
+    //是否啟用
+    var switchStatus = false;
+    $(".IsEnalbe input").change(function (e){
+        if ($(this).is(':checked')) {
+            switchStatus = $(this).is(':checked');
+            console.log(switchStatus);
+        }
+        else {
+            switchStatus = $(this).is(':checked');
+            console.log(switchStatus);
+        }
+    });
 
 });
