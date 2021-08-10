@@ -31,6 +31,12 @@ body {
     padding-left: 40px;
 }
 
+.navbar-brand p:hover{
+    margin: 0px;
+    padding-left: 40px;
+    color: #DB7243;
+}
+
 nav ul {
     padding-right: 40px;
 }
