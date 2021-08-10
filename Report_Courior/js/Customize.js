@@ -1,8 +1,5 @@
 jQuery(document).ready(function ($) {
 
-
-    $("#AddressSectionZipCode").multiSelect();
-
     // sideBar
 
     $('.cart>li>a').click(function (event) {
@@ -21,17 +18,5 @@ jQuery(document).ready(function ($) {
     });
 
 
-    //是否啟用
-    var switchStatus = false;
-    $(".IsEnalbe input").change(function (e){
-        if ($(this).is(':checked')) {
-            switchStatus = $(this).is(':checked');
-            console.log(switchStatus);
-        }
-        else {
-            switchStatus = $(this).is(':checked');
-            console.log(switchStatus);
-        }
-    });
 
 });

@@ -76,6 +76,9 @@
                                                 <div class="dropdown-divider border-0 d-lg-none"></div>
                                             </div>
                                             <div class="col-lg-6 p-lg-5">
+                                                <h6 class="dropdown-header text-primary">收益查詢</h6>
+                                                <a class="dropdown-item" href="#">收益表單</a>
+                                                <div class="dropdown-divider border-0"></div>
                                                 <h6 class="dropdown-header text-primary">申訴聊天室</h6>
                                                 <a class="dropdown-item" href="#">聯絡客服</a>
                                             </div>
@@ -104,8 +107,11 @@
                     </div>
                 </header>
 
+                <!-- AsideAndMain區塊 -->
                 <div class="container" id="AsideAndMain">
                     <div class="row align-items-start">
+
+                        <!-- Aside區塊 -->
                         <div class="col-lg-3" id="aside">
                             <ul class="cart">
                                 <li>
@@ -122,6 +128,12 @@
                                     </ul>
                                 </li>
                                 <li>
+                                    <a href="#">收益查詢</a>
+                                    <ul>
+                                        <li><a href="#">收益表單</a></li>
+                                    </ul>
+                                </li>
+                                <li>
                                     <a href="#">申訴聊天室</a>
                                     <ul>
                                         <li><a href="#">聯絡客服</a></li>
@@ -130,6 +142,7 @@
                             </ul>
                         </div>
 
+                        <!-- Main區塊 -->
                         <div class="col-lg-9" id="main">
                             <div class=MainTitle>
                                 <p>會員資料修改</p>
@@ -235,7 +248,7 @@
                                     </div>
 
                                     <div class="infoItem">
-                                        <form class="AddressSection">
+                                        <div class="AddressSection">
                                             <label for="AddressSectionZipCode">外送區域：</label>
                                             <select id="AddressSectionZipCode" name="ZipCode" multiple>
                                                 <optgroup label="台北市">
@@ -288,7 +301,7 @@
                                                     <option value="Pistachio">大安區</option>
                                                 </optgroup>
                                             </select>
-                                        </form>
+                                        </div>
                                     </div>
 
                                     <div class="infoItem infoItemPhoto">
@@ -310,7 +323,7 @@
                                     </div>
 
                                     <div class="infoItem LastUpdateDatetime">
-                                        <label for="LastUpdateDatetime" class="form-label">前次修改人員時間：</label>
+                                        <label for="LastUpdateDatetime" class="form-label">前次修改時間：</label>
                                         <input class="form-control" type="text" placeholder="Default input readonly"
                                             aria-label="default input example" id="LastUpdateDatetime"
                                             name="LastUpdateDatetime" readonly><br><br>
@@ -349,6 +362,8 @@
 
         </main>
     </div>
+
+    <!-- Footer -->
     <div id="layoutDefault_footer">
         <footer class="footer pt-10 pb-5 mt-auto bg-dark footer-dark">
             <div class="container">
@@ -367,7 +382,6 @@
 
     <!-- 載入套版JS navBar -->
     <!-- 4.3.1/js/bootstrap.bundle.min.js fisrt,, then script.js  -->
-    <!-- <script src="./js/scripts.js"></script> -->
 
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js"
         crossorigin="anonymous"></script>
