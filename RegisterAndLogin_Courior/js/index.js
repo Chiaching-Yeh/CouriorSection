@@ -12,6 +12,7 @@ $(window).on("load", function () {
         a.addClass("-none");
       }
       b.removeClass("-none").fadeIn(500);
+      
     }
 
     // 返回頁面頂端
