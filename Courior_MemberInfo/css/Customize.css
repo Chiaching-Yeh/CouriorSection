@@ -274,7 +274,7 @@ input:checked+.slider:before {
 /* 相片上傳btn */
 
 input[type=file]::file-selector-button {
-    border: #DB7243;PreviewBox
+    border: #DB7243;
     padding: .2em .4em;
     background-color: #DB7243;
     border-radius: 50px;
@@ -304,4 +304,10 @@ input[type=file]::file-selector-button:active {
     border: #ccc 5px dotted;
     width: 250px;
     height: 250px;
+}
+
+.preview_Show{
+    width:230px;
+    height:230px;
+    box-shadow: 5px 5px 5px rgb(226, 221, 221);
 }

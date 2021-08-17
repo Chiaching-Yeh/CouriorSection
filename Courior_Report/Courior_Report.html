@@ -35,6 +35,9 @@
     <!-- 載入自訂js -->
     <script src="./js/Customize.js"></script>
 
+    <link   rel="stylesheet" type="text/css" href="./vendors/css/jquery.datetimepicker.css" />
+    <script src="./vendors/js/jquery.datetimepicker.full.js"></script>
+
 
 </head>
 
@@ -143,19 +146,21 @@
                                 <p>收益表單</p>
                             </div>
                             <div class="container">
-                                <div class="form-inline mt-3">
+                                <div class="form-inline ">
                                     <div class="form-group col-md-10 reportSection">
                                         <label for="reportDate">報表區間：</label>
-                                        <input type="date" class="form-control" id="reportDate" name="date1">
+                                        <input class="form-control" id="start_date" placeholder="Start Date" name="date1">
                                         <span class="pl-3 pr-3"> ~ </span>
-                                        <input type="date" class="form-control" id="reportDate" name="date2">
+                                        <input class="form-control end" id="end_date" placeholder="End Date" name="date2">
                                     </div>
-                                    <button type="submit" class="btnSearch">查詢</button>
+                                    <span class="btnSearch">
+                                        <button type="submit" class="btnSearchForday">查詢</button>
+                                    </span>
                                 </div>
 
                                 <div class="sm-12 sortAndPage">
                                     <div class="row">
-                                        <div class="sort col-sm-6 sort" >
+                                        <div class="sort col-sm-6 sort">
                                             <select class="form-control">
                                                 <option disabled selected hidden>排序方式</option>
                                                 <option>訂單編號遞增</option>
@@ -176,7 +181,7 @@
                                                     <option>100筆</option>
                                                     <option>150筆</option>
                                                 </select>
-                                            </div>
+                                            </div class="pageAtag">
                                             <a href="#">下一頁</a>
                                             <a href="#">最後一頁</a>
                                         </div>
@@ -189,7 +194,7 @@
                                             <th scope="col">序號</th>
                                             <th scope="col">訂單編號</th>
                                             <th scope="col">外送區域</th>
-                                            <th scope="col">商加名稱</th>
+                                            <th scope="col">商家名稱</th>
                                             <th scope="col">外送費</th>
                                             <th scope="col">日期</th>
                                             <!-- <th scope="col">詳細</th> -->
@@ -319,6 +324,8 @@
         crossorigin="anonymous"></script>
 
     <script src="./js/scripts.js"></script>
+
+
 
 
 
